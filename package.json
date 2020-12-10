@@ -1,10 +1,15 @@
 {
-  "name": "react-component-lib",
-  "version": "1.0.0",
+  "name": "react-fotorama-lib",
+  "version": "1.0.0-alpha.1",
+  "author": {
+    "name": "Dmitry Senkevich, Artem Astahov",
+    "email" : "fundorin174@gmail.com"
+  },
+  "homepage": "https://fundorin174.github.io/react-fotorama-lib/",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "repository": {
-    "url": "https://github.com/michal-wrzosek/react-component-lib",
+    "url": "https://github.com/Fundorin174/react-fotorama-lib",
     "type": "git"
   },
   "license": "MIT",
@@ -50,5 +55,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "@types/react-hammerjs": "^1.0.1",
+    "react-hammerjs": "^1.0.1"
+  }
 }
