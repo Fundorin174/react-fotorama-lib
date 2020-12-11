@@ -3,7 +3,7 @@
 This is a simple library for create responsive slider from photos, uploaded from https://uploadcare.com/
 
 You can see the template on:
-https://medium.com/@xfor/developing-publishing-react-component-library-to-npm-styled-components-typescript-cc8274305f5a
+https://fundorin174.github.io/react-fotorama-lib/
 
 ## Installation:
 
@@ -47,15 +47,15 @@ const photos = [ <br>
     "f000074d-1244-47be-b8af-78e786829ec2", <br>
   ]; <br>
 
-import Fotorama component into your project with the required property  {photosUUID}
+import Fotorama component into your project with the required property  {photosUUID}  <br>
 ...you code... <br>
- [<Fotorama photosUUID = {photos} />]; <br>
+ (<Fotorama photosUUID = {photos} />); <br>
 ...you code... <br>
 ## Props type:
 
-FotoramaProps = {
-  photosUUID: string[];
-  width?: number;
-  height?: number;
-  backgrounColor?: string;
+FotoramaProps = { <br>
+  photosUUID: string[];  <br>
+  width?: number;  <br>
+  height?: number;  <br>
+  backgrounColor?: string;  <br>
 };

@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-fotorama-lib
 
-## Available Scripts
+This is a simple library for create responsive slider from photos, uploaded from https://uploadcare.com/
 
-In the project directory, you can run:
+You can see the template on:
+https://fundorin174.github.io/react-fotorama-lib/
 
-### `npm start`
+## Installation:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To install react-fotorama-lib:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+npm i react-fotorama-lib
+```
+or
+```
+yarn add react-fotorama-lib
+```
 
-### `npm test`
+## Dependencies:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+react <br>
+react-dom <br>
+styled-components <br>
+react-hammerjs <br>
+typescript <br>
 
-### `npm run build`
+## How to use:
+import Fotorama from 'react-fotorama-lib'; <br>
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+upload UUID (not url) of you photos from [https://uploadcare.com/](https://uploadcare.com/) and create array, like this: <br>
+const photos = [ <br>
+    "db8b2631-6a1b-40b0-86d6-60f28ad03985", <br>
+    "aca9be64-c303-486e-b68e-087a96548925", <br>
+    "d54d6d76-0134-4572-80d8-25d4d7464d14", <br>
+    "d1b1c694-0ecb-4c7f-8bc9-f92b48e2599b", <br>
+    "106ef16b-c571-4e2d-b955-e8eae3303fe9", <br>
+    "36f27f9a-ad56-412a-9dae-c22a9fbff56c", <br>
+    "963b98d2-e9d9-4467-a3a3-283931960ebe", <br>
+    "485e5717-f066-47e6-8c72-a94c6e9948c2", <br>
+    "f5eebb33-8b3f-4df5-8bd1-7a795afcdfa1", <br>
+    "023130c8-a0db-4090-af09-64e70921763d", <br>
+    "8edb20ab-8344-4770-9c13-f07ae097b4ad", <br>
+    "1fb94b66-1165-435f-b814-e796dd4f65f4", <br>
+    "2f53da82-79d3-4cf9-a0f6-9104ae2646da", <br>
+    "5f46316c-00bf-4679-9ef6-7c931d669394", <br>
+    "f000074d-1244-47be-b8af-78e786829ec2", <br>
+  ]; <br>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+import Fotorama component into your project with the required property  {photosUUID}  <br>
+...you code... <br>
+ (<Fotorama photosUUID = {photos} />); <br>
+...you code... <br>
+## Props type:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+FotoramaProps = { <br>
+  photosUUID: string[];  <br>
+  width?: number;  <br>
+  height?: number;  <br>
+  backgrounColor?: string;  <br>
+};
