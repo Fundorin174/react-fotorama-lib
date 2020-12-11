@@ -1,3 +1,3 @@
-import { TestComponent } from './components/TestComponent/TestComponent';
+import { Fotorama } from './components/TestComponent/reactComponentLib/components/Fotorama/index';
 
-export { TestComponent };
+export { Fotorama };
